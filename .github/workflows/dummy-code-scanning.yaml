@@ -1,0 +1,10 @@
+name: "Dummy Code Scanning"
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  code-scanning-javascript:
+    name: Perform code scanning (JavaScript)
+    uses: recognizegroup/security/.github/workflows/code-scanning-javascript.yaml@v2
